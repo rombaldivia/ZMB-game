@@ -10,13 +10,30 @@
 
 ---
 
+## Visual Overview
+
+<p align="center">
+  <img src="assets/figures/zmb_cover_art.webp" width="245" alt="ZMB atmospheric cover art">
+</p>
+
+<p align="center">
+  <strong>Atmospheric visual identity developed for the ZMB prototype.</strong>
+</p>
+
+| Main Menu | Unity World Overview |
+|:---:|:---:|
+| <img src="assets/figures/zmb_main_menu.webp" width="420" alt="ZMB main menu"> | <img src="assets/figures/zmb_unity_world_overview.webp" width="500" alt="ZMB Unity world overview"> |
+| Runtime menu with New Game, Load Game, Options, and Exit flows. | Large-scale terrain and environment development inside the Unity Editor. |
+
+---
+
 ## Project Overview
 
 **ZMB** is a first-person 3D game-development prototype created in Unity. The project explores the integration of player control, enemy navigation, encounter generation, health management, animation, environmental interaction, and combat-oriented gameplay within a single real-time application.
 
 Rather than being presented as a finished commercial title, ZMB functions as a practical development environment for studying how independent gameplay systems are connected through Unity components and C# scripts. The repository documents both custom project logic and integrated asset packages used during prototyping.
 
-The current implementation is intended to demonstrate the technical foundations of a survival-style experience in which the player navigates a 3D environment while dynamically generated enemies pursue and engage the player.
+The current implementation is intended to demonstrate the technical foundations of a survival-style experience in which the player navigates a large atmospheric 3D environment while dynamically generated enemies pursue and engage the player.
 
 ---
 
@@ -27,11 +44,12 @@ The current implementation is intended to demonstrate the technical foundations 
 | Engine | Unity 2020.1.9f1 |
 | Programming language | C# |
 | Perspective | First-person 3D |
+| Environment | Large terrain-based Unity scene |
 | Player locomotion | `CharacterController`-based movement |
 | Enemy navigation | Unity `NavMeshAgent` |
 | Enemy generation | Coroutine-driven recurring spawner |
 | Animation | Unity Animator integration |
-| Interface layer | Unity UI and TextMeshPro packages |
+| Interface layer | Runtime menu, Unity UI, and TextMeshPro packages |
 | Physics | Unity 3D physics modules |
 | License | MIT |
 
@@ -133,6 +151,11 @@ These resources should be reviewed individually before redistribution outside th
 ZMB-game/
 ├── README.md
 ├── LICENSE
+├── assets/
+│   └── figures/
+│       ├── zmb_cover_art.webp
+│       ├── zmb_main_menu.webp
+│       └── zmb_unity_world_overview.webp
 └── OneDrive/
     └── Unity/
         └── ZMB/
@@ -223,6 +246,8 @@ ZMB demonstrates the integration of multiple real-time software systems:
 - Coroutine-based content generation.
 - Animator coordination.
 - Component-based health management.
+- Menu and scene-flow foundations.
+- Large-environment construction inside Unity.
 - Modular interaction systems.
 - Unity package and asset integration.
 
@@ -232,16 +257,16 @@ The project is particularly useful as a record of practical Unity development an
 
 ## Development Status
 
-ZMB is an experimental prototype and learning-oriented game project. The repository contains functional gameplay foundations but should not be interpreted as a production-ready release.
+ZMB is an experimental prototype and learning-oriented game project. The repository contains functional gameplay foundations, an atmospheric terrain environment, and an initial runtime menu, but should not be interpreted as a production-ready release.
 
 Future development may focus on:
 
 - Formal enemy finite-state machines.
 - Improved scene and level organization.
 - Configurable encounter progression.
-- User-interface and game-state flows.
+- Complete menu, loading, options, and game-state flows.
 - Audio and visual feedback refinement.
-- Performance profiling and asset optimization.
+- Performance profiling and terrain optimization.
 - Automated tests for reusable gameplay components.
 - Migration to a supported Unity Long-Term Support release.
 
@@ -254,5 +279,5 @@ The repository is distributed under the **MIT License**. Third-party Unity asset
 ---
 
 <p align="center">
-  <strong>Real-time systems, modular gameplay, and practical Unity engineering in a single prototype.</strong>
+  <strong>Atmospheric world-building, real-time systems, and practical Unity engineering in a single prototype.</strong>
 </p>
